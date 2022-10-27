@@ -1,1 +1,2 @@
 # synchronous-IPC-Via-pipelines
+A program to enable inter-process communication between a producer and a consumer via pipes. Here the producer sends encoded data as frames via a pipe after adding parity bits and sync bits. After receiving data frames the consumer decodes the data and checks for transmission errors using  checksum. Finally, the consumer modifies data, encodes it, and sends it back to the producer.
